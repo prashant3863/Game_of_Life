@@ -91,7 +91,12 @@ class World
   end
   
 end
-    
+
+class Game
+  attr_accessor :world, :seeds
+  def initialize(worls=World.new, seeds=[0])
+    @world = world
+          
    
     
     
