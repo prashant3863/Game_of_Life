@@ -48,3 +48,8 @@ class World
       candidate = self.cell_grid[cell.y - 1][cell.x]
       live_neighbours << candidate if candidate.alive?
     end    
+    
+    if cell.y > 0 && cell.x < (col-1)
+      candidate = self.cell_grid[cell.y - 1][cell.x + 1]
+      live_neighbours << candidate if candidate.alive?
+    end
