@@ -113,6 +113,23 @@ class Game
       if cell.alive? && neighbour_count < 2
         next_round_dead_cells << cell
       end
+      
+      #Rule2
+      if cell.alive? && ([2,3].include?neighbour_count)
+        next_round_live_cells << cell
+      end
+      
+      #Rule3
+      if cell.alive? && neighbur_count>3
+        next_round_dead_cells << cell
+      end
+      
+      #Rule4
+      if cell.dead? && neighbour_count == 3
+        next_round_live_cells << cell
+      end
+    end
+      
   end    
    
     
