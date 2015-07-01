@@ -108,6 +108,11 @@ class Game
     
     @world.cells.each do |cell|
       neighbour_count = self.world.live_neighbours_around_cell(cell).count
+      
+      #Rule1
+      if cell.alive? && neighbour_count < 2
+        next_round_dead_cells << cell
+      end
   end    
    
     
