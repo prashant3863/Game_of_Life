@@ -15,5 +15,11 @@ class Cell
     !alive
   end
   
+  def die!
+    @alive = false
+  end
   
-    
+  def revive!
+    @alive = true
+  end
+end    
