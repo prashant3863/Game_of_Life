@@ -105,6 +105,9 @@ class Game
   # all game conditions comes here
     next_round_live_cells = []
     next_round_dead_cells = []
+    
+    @world.cells.each do |cell|
+      neighbour_count = self.world.live_neighbours_around_cell(cell).count
   end    
    
     

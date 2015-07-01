@@ -103,6 +103,8 @@ class Game
   
   def generation
   # all game conditions comes here
+    next_round_live_cells = []
+    next_round_dead_cells = []
   end    
    
     
