@@ -79,6 +79,11 @@ class World
       live_neighbours << candidate if candidate.alive?
     end
     
+    live_neighbours
+  end
+  
+      
+    
    
     
     

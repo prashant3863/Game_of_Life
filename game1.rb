@@ -82,7 +82,11 @@ class World
     live_neighbours
   end
   
-      
+  def live_cells
+    cells.select{|cell| cell.alive}
+  end
+  
+  
     
    
     
