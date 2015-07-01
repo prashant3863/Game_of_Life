@@ -27,7 +27,7 @@ end
 class World
   attr_accessor :rows, :cols, :cell_grid, :cells
   
-  def initialize(rows=3, cols=3)
+  def initialize(rows=5, cols=5)
     @rows = rows
     @cols = cols
     @cells = []
