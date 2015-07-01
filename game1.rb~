@@ -102,7 +102,7 @@ class Game
   end  
   
   def generation
-  
+  # all game conditions comes here
   end    
    
     
