@@ -129,8 +129,14 @@ class Game
         next_round_live_cells << cell
       end
     end
-      
+    
+    next_round_live_cells.each do |cell|
+      cell.revive!
+    end
+    next_round_dead_cells.each do |cell|
+      cell.die!
+    end  
   end    
    
-    
+end    
     
