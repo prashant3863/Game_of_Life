@@ -86,7 +86,11 @@ class World
     cells.select{|cell| cell.alive}
   end
   
+  def populate
+  #need to take input from user to initialze the first gen
+  end
   
+end
     
    
     
