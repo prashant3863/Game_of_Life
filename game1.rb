@@ -99,7 +99,11 @@ class Game
     seeds.each do |seed|
       @world.cell_grid[seed[0]][seed[1]].alive = true
     end
-  end      
+  end  
+  
+  def generation
+  # all game conditions comes here
+  end    
    
     
     
